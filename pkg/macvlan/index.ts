@@ -1,6 +1,6 @@
 import { importTypes } from '@rancher/auto-import';
 import { IPlugin } from '@shell/core/types';
-import MacvlanIndex from './views/index.vue'
+import MacvlanIndex from './views/index.vue';
 
 // Init the package
 export default function(plugin: IPlugin) {
@@ -14,8 +14,8 @@ export default function(plugin: IPlugin) {
   plugin.addProduct(require('./product'));
 
   plugin.addRoute({
-    name: 'macvlan-c-cluster',
-    path: '/macvlan/c/:cluster',
+    name:      'macvlan-c-cluster',
+    path:      '/macvlan/c/:cluster',
     component: MacvlanIndex
-  })
+  });
 }

@@ -2,16 +2,13 @@
 import { mapGetters } from 'vuex';
 export default {
   data() {
-    
-    return {}
+    return {};
   },
-  computed: {
-    ...mapGetters(['currentCluster']),
-  },
+  computed: { ...mapGetters(['currentCluster']) },
   mounted() {
-    console.log(this.currentCluster)
+    console.log(this.currentCluster);
   }
-}
+};
 </script>
 <template>
   <div>

@@ -17,9 +17,11 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/nuxt dev",
+    "mem-dev": "node --max-old-space-size=8192 ./node_modules/.bin/nuxt dev",
     "nuxt": "./node_modules/.bin/nuxt",
     "build": "./node_modules/.bin/nuxt build",
     "build-pkg": "./node_modules/@rancher/shell/scripts/build-pkg.sh",
-    "serve-pkgs": "./node_modules/@rancher/shell/scripts/serve-pkgs"
+    "serve-pkgs": "./node_modules/@rancher/shell/scripts/serve-pkgs",
+    "lint": "./node_modules/.bin/eslint --max-warnings 0 --ext .js,.ts,.vue ."
   }
 }
