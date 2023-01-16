@@ -27,14 +27,14 @@ yarn link "@rancher/shell"
 
 ```shell
 yarn install
-
 ```
 
 6. 在 ui plugin 根目录中，执行下面命令，启动开发环境：
 
 ```shell
 API=<rancher server address> yarn mem-dev --spa
-
 ```
+如果报缺少crypto-js包，执行 `yarn add crypto-js`命令，添加依赖
+
 
 `yarn link` ref: https://classic.yarnpkg.com/lang/en/docs/cli/link/
