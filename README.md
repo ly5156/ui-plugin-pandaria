@@ -36,3 +36,5 @@ yarn install
 API=<rancher server address> yarn mem-dev --spa
 
 ```
+
+`yarn link` ref: https://classic.yarnpkg.com/lang/en/docs/cli/link/
