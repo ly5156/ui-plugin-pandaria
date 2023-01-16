@@ -6,10 +6,10 @@
 
 在 `dependencies` 值中，添加依赖: `"crypto-js": "^4.1.1"`
 
-2. 进入dashboard IU（中国版 Prime UI）根目录，执行下面命令，在 `shell` 目录下添加 `rancher-components` 软链接，指向`pkg/rancher-components/src/components`:
+2. 进入dashboard IU（中国版 Prime UI）shell 目录，执行下面命令，在 `shell` 目录下添加 `rancher-components` 软链接，指向`pkg/rancher-components/src/components`:
 
 ```shell
-ln -s pkg/rancher-components/src/components shell/rancher-components
+ln -s ../pkg/rancher-components/src/components rancher-components
 ```
 
 3. 进入 `dashboard/shell` 目录，执行下面命令，为`@rancher/shell`包建一个全局软链接，指向当前源码:
