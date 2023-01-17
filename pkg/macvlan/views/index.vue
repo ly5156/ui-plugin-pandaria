@@ -13,9 +13,8 @@ export default {
 <template>
   <div>
     test macvlan index page
-    当前集群ID：{{ currentCluster.id }}
+    curruent cluster id: {{ currentCluster.id }}
     <div>
-      json: {{ JSON.stringify(currentCluster) }}
     </div>
   </div>
 </template>
