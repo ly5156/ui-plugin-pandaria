@@ -10,14 +10,47 @@ BOLD="\033[1m"
 NORMAL="\033[22m"
 CHECK="\xE2\x9C\x94"
 
+FORCE="false"
+
 GITHUB_SOURCE=$(git config --get remote.origin.url | sed -e 's/^git@.*:\([[:graph:]]*\).git/\1/')
-GITHUB_BRANCH="main"
-PLUGINS=( "$@" )
+GITHUB_BRANCH=$(git branch --show-current)
 
 echo -e "${CYAN}${BOLD}Build UI Plugins${RESET}"
 
 echo -e "${CYAN}GitHub Repository: ${GITHUB_SOURCE}${RESET}"
 echo -e "${CYAN}GitHub Branch    : ${GITHUB_BRANCH}${RESET}"
+
+usage() {
+  echo "Usage: $0 [plugins]"
+  echo "  -f           Force building the chart even if it already exists"
+  echo "  -s <repo>    Specify destination GitHub repository (org/name) - defaults to the git origin (implies -g)"
+  echo "  -b <branch>  Specify destination GitHub branch (implies -g)"
+  exit 1
+}
+while getopts "hfb:s:" opt; do
+  case $opt in
+    h)
+      usage
+      ;;
+    f)
+      FORCE="true"
+      ;;      
+    s)
+      GITHUB_BUILD="true"
+      GITHUB_SOURCE="${OPTARG}"
+      ;;
+    b)
+      GITHUB_BUILD="true"
+      GITHUB_BRANCH="${OPTARG}"
+      ;;
+    *)
+      usage
+      ;;
+  esac
+done
+
+shift $((OPTIND-1))
+PLUGINS=( "$@" )
 
 # --------------------------------------------------------------------------------
 # Check that we have the required commands avaialble for this script
