@@ -35,7 +35,34 @@
     ],
     "paths": {
       "@shell/*": [
-        "../../node_modules/@rancher/shell/*"
+        "../../node_modules/@rancher/shell/*",
+      ],
+      "@shell/core/*": [
+        "../../node_modules/@rancher/shell/core/*"
+      ],
+      "@shell/config/*": [
+        "../../node_modules/@rancher/shell/config/*"
+      ],
+      "@shell/components/*": [
+        "../../node_modules/@rancher/shell/components/*"
+      ],
+      "@shell/store/*": [
+        "../../node_modules/@rancher/shell/store/*"
+      ],
+      "@shell/plugins/*": [
+        "../../node_modules/@rancher/shell/plugins/*"
+      ],
+      "@shell/utils/*": [
+        "../../node_modules/@rancher/shell/utils/*"
+      ],
+      "@shell/models/*": [
+        "../../node_modules/@rancher/shell/models/*"
+      ],
+      "@shell/mixins/*": [
+        "../../node_modules/@rancher/shell/mixins/*"
+      ],
+      "@shell/pages/*": [
+        "../../node_modules/@rancher/shell/pages/*"
       ],
       "@components/*": [
         "@rancher/components/*"
