@@ -1,0 +1,5 @@
+plugin/macvlan-0.1.1.umd.min.1.js
+plugin/macvlan-0.1.1.umd.min.1.js.map
+plugin/macvlan-0.1.1.umd.min.js
+plugin/macvlan-0.1.1.umd.min.js.map
+plugin/package.json
