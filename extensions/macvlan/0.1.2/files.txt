@@ -1,0 +1,11 @@
+plugin/macvlan-0.1.2.umd.min.3.js
+plugin/macvlan-0.1.2.umd.min.3.js.map
+plugin/macvlan-0.1.2.umd.min.4.js
+plugin/macvlan-0.1.2.umd.min.4.js.map
+plugin/macvlan-0.1.2.umd.min.formatters.js
+plugin/macvlan-0.1.2.umd.min.formatters.js.map
+plugin/macvlan-0.1.2.umd.min.js
+plugin/macvlan-0.1.2.umd.min.js.map
+plugin/macvlan-0.1.2.umd.min.promptRemove.js
+plugin/macvlan-0.1.2.umd.min.promptRemove.js.map
+plugin/package.json

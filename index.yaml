@@ -11,8 +11,27 @@ entries:
       catalog.cattle.io/scope: management
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
+    appVersion: 0.1.2
+    created: "2023-02-07T18:35:17.622799+08:00"
+    description: macvlan plugin
+    digest: e1471bec7ce7051f4b230b6920236cabd6367ac040796b6264b4aecbf93c2394
+    name: macvlan
+    type: application
+    urls:
+    - assets/macvlan/macvlan-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.25.0-0'
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+    apiVersion: v2
     appVersion: 0.1.1
-    created: "2023-02-03T17:09:05.999275+08:00"
+    created: "2023-02-07T18:35:17.622634+08:00"
     description: macvlan plugin
     digest: 02d8d059c5ca311b344be6aa0c4d75f2b4901d74ee553a214b8a732e4a4910c9
     name: macvlan
@@ -31,7 +50,7 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-02-03T17:09:05.999104+08:00"
+    created: "2023-02-07T18:35:17.622403+08:00"
     description: macvlan plugin
     digest: 133f02481386d0df8d05c019b46fa07d8acbef38bd2848f383331ec9a18b6bb8
     name: macvlan
@@ -39,4 +58,4 @@ entries:
     urls:
     - assets/macvlan/macvlan-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-03T17:09:05.998847+08:00"
+generated: "2023-02-07T18:35:17.621812+08:00"
