@@ -17,7 +17,7 @@ export default function(plugin: IPlugin) {
 
   plugin.addRoute({
     name:      `${ PRODUCT_NAME }-c-cluster`,
-    path:      '/:product/c/:cluster',
+    path:      '/:product/c/:cluster/:resource',
     component: MacvlanIndex
   });
 }

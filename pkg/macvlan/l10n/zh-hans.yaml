@@ -1,7 +1,7 @@
 macvlan:
   nav:
     vlanSubnet:
-      label: Flat Network
+      label:  扁平网络
   tableHeaders:
-    colorText: Color Text
+    colorText: 彩色文本
     id: ID

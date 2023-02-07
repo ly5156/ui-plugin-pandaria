@@ -9,7 +9,7 @@ export function init($plugin, store) {
     group:      'cluster',
     namespaced: false,
     icon:       'globe',
-    route:      { name: 'macvlan-c-cluster' },
+    route:      { name: 'macvlan-c-cluster', params: { resource: 'macvlan-resource' } }, // TODO: rename to resource name
     exact:      true
   });
   basicType(['macvlan-subnet'], 'cluster');
