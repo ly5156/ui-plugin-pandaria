@@ -7,7 +7,10 @@ import { SCHEMA } from '@shell/config/types';
 // TODO: rename to resource name
 const macvlan = (spec, ctx) => {
   const that = {
-    ...spec, _key: `key_${ spec.id }`, nameDisplay: spec.name
+    ...spec,
+    _key:        `key_${ spec.id }`,
+    nameDisplay: spec.name,
+    type:        'macvlan-resource' // TODO: change to resource type
   };
   const availableActions = [{
     action:     'promptRemove',
