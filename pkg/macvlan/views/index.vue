@@ -1,8 +1,24 @@
 <script>
 import { mapGetters } from 'vuex';
-import ResourceTable from '@shell/components/ResourceTable';
 import Loading from '@shell/components/Loading';
 import { SCHEMA } from '@shell/config/types';
+import ResourceTable from '../components/ResourceTable';
+
+const getDemoData = (count = 200) => {
+  const data = [];
+
+  for (let i = 0; i < count; i++) {
+    const index = i + 1;
+
+    data.push({
+      id:        `${ index }`,
+      name:      `test${ index }`,
+      colorText: `color text${ index }`
+    });
+  }
+
+  return data;
+};
 
 // TODO: rename to resource name
 const macvlan = (spec, ctx) => {
@@ -65,6 +81,7 @@ export default {
         {
           name:     'id',
           labelKey: 'macvlan.tableHeaders.id',
+          sort:     ['id']
         },
         {
           name:     'name',
@@ -77,26 +94,7 @@ export default {
           formatterOpts: { color: 'red' }
         },
       ],
-      data: [{
-        id:        '1',
-        name:      'test1',
-        colorText: 'color text1'
-      },
-      {
-        id:        '2',
-        name:      'test2',
-        colorText: 'color text2',
-      },
-      {
-        id:        '3',
-        name:      'test3',
-        colorText: 'color text3'
-      },
-      {
-        id:        '4',
-        name:      'test4',
-        colorText: 'color text4'
-      }],
+      data: getDemoData(),
     };
   },
   computed: {
