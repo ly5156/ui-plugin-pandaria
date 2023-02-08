@@ -203,7 +203,6 @@ for d in pkg/*/ ; do
 done
 
 echo -e "${CYAN}${BOLD}${CHECK} One or more packages built${RESET}"
-popd > /dev/null
 
 # Clean up
 rm -rf ${CHART_TMP}
