@@ -108,8 +108,14 @@ export default {
     }
   },
   methods: {
-    async remove(btnCB) {
+    openDialog() {
+      const inStore = this.$store.getters['currentProduct'].inStore;
 
+      console.log(inStore);
+      this.$store.dispatch(`${ inStore }/promptModal`, {
+        resources: [],
+        component: 'MacvlanTestDialog'
+      });
     }
   },
   mounted() {
@@ -120,6 +126,11 @@ export default {
 <template>
   <Loading v-if="$fetchState.pending" />
   <div v-else>
+    <div>
+      <button class="btn role-secondary" @click="openDialog">
+        test open custom dialog
+      </button>
+    </div>
     <ResourceTable
       :schema="schema"
       :groupable="false"
