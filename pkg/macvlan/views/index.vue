@@ -3,6 +3,7 @@ import { mapGetters } from 'vuex';
 import Loading from '@shell/components/Loading';
 import { SCHEMA } from '@shell/config/types';
 import ResourceTable from '../components/ResourceTable';
+import ListPageMasthead from '../components/ListPageMasthead.vue';
 
 const getDemoData = (count = 200) => {
   const data = [];
@@ -69,6 +70,7 @@ export default {
   components: {
     Loading,
     ResourceTable,
+    ListPageMasthead,
   },
   async fetch() {},
   data() {
@@ -126,6 +128,7 @@ export default {
 <template>
   <Loading v-if="$fetchState.pending" />
   <div v-else>
+    <ListPageMasthead resource="macvlan" type-display="Macvlan"></ListPageMasthead>
     <div>
       <button class="btn role-secondary" @click="openDialog">
         test open custom dialog

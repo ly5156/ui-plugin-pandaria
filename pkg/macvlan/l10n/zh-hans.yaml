@@ -5,3 +5,5 @@ macvlan:
   tableHeaders:
     colorText: 彩色文本
     id: ID
+typeDescription:
+  macvlan: macvlan 类型描述

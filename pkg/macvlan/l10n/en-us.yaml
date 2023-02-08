@@ -5,3 +5,5 @@ macvlan:
   tableHeaders:
     colorText: Color Text
     id: ID
+typeDescription:
+  macvlan: macvlan type description
