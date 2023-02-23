@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ui-plugin-test
-  namespace: default
+  namespace: {{ .Release.Namespace }}
 spec:
   replicas: 1
   template:
