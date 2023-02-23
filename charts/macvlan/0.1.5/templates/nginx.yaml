@@ -1,0 +1,26 @@
+{{- if .Values.plugin.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-plugin-test
+  labels:
+    workload.user.cattle.io/workloadselector: apps.deployment-default-test
+  namespace: {{ .Release.Namespace }}
+spec:
+  selector:
+    matchLabels:
+      workload.user.cattle.io/workloadselector: apps.deployment-default-test
+  template:
+    metadata:
+      labels:
+        workload.user.cattle.io/workloadselector: apps.deployment-default-test
+    spec:
+      containers:
+        - imagePullPolicy: Always
+          name: container-0
+          image: nginx
+          stdin: true
+          stdinOnce: false
+          tty: true
+  replicas: 1
+{{- end }}

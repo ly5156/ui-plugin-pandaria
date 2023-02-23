@@ -1,0 +1,2 @@
+(("undefined"!==typeof self?self:this)["webpackJsonpmacvlan_0_1_5"]=("undefined"!==typeof self?self:this)["webpackJsonpmacvlan_0_1_5"]||[]).push([[4],{"1bb6":function(e,n){const a=[{macvlan:{nav:{vlanSubnet:{label:"Flat Network"}},tableHeaders:{colorText:"Color Text",id:"ID"}},typeDescription:{macvlan:"macvlan type description"}}];e.exports=a.length<=1?a[0]:a}}]);
+//# sourceMappingURL=macvlan-0.1.5.umd.min.4.js.map
